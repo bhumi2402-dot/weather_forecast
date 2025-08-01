@@ -10,13 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
 </head>
 
-<body 
-  {% if exception_occured %}
-    style="background-image: url('https://images.pexels.com/photos/3008509/pexels-photo-3008509.jpeg?auto=compress&cs=tinysrgb&w=1600'); background-size: cover;"
-  {% else %}
-    style="background-image: url('{{ image_url }}'); background-size: cover;"
-  {% endif %}
->
+<body>
+
+    {% if exception_occured %}
+  <img src="{% static 'ice_ice.jpeg' %}"
+       alt="Exception Background"
+       style="width: 100%; height: auto; object-fit: cover;">
+{% endif %}
 
     <div class="container">
         <h1>Weather App</h1>
