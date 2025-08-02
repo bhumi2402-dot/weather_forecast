@@ -158,7 +158,7 @@ input, .btn ::placeholder{
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200'); */
 
 .bg-image {
-  background-image: url('ice_ice.jpeg');
+  background-image: url('/static/ice_ice.jpeg');
   background-size: cover;
   background-position: center;
   height: 100vh;
